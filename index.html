@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple Todo</title>
+</head>
+<body>
+    <h1 class="title">Things That I Need To Do..!</h1>
+
+    <div class="all-tasks">
+        <h2 class="task-list-title">My list</h2>
+        <ul class="task-list">
+            <li class="active-list">Youtube</li>
+            <li>Work</li>
+            <li>Grocery</li>
+        </ul>
+
+        <form action="">
+            <input type="text" aria-label="Add New List" class="new list" placeholder="Type List Name">
+            <button class="btn list">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <div class="todo-header">
+            <h2 class="list-title">Youtube</h2>
+            <p class="task-count">3 Task Remaining</p>
+        </div>
+
+        <div class="todo-body">
+            <!--tasks starts-->
+            <div class="tasks">
+                <input type="checkbox" id="task-1">
+                <label for="task-1">
+                    <span class="custom-checkbox"></span>
+                    Record games</label>
+            </div>
+            <div class="tasks">
+                <input type="checkbox" id="task-2">
+                <label for="task-2">
+                    <span class="custom-checkbox"></span>
+                    do edititng</label>
+            </div>
+            <div class="tasks">
+                <input type="checkbox" id="task-3">
+                <label for="task-3">
+                    <span class="custom-checkbox"></span>
+                    go to sleep</label>
+            </div>
+            <!--tasks ends-->
+            <div class="task-creator">
+                <form action="">
+                    <input type="text" aria-label="Add New task" class="new list" placeholder="Type task Name">
+                    <button class="btn task">+</button>
+                </form>
+            </div>
+            <div class="delete-stuff">
+                <button class="btn delete">Clear Completed Tasks</button>
+                <button class="btn delete">Delete list</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
